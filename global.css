@@ -1,0 +1,85 @@
+#qtd_acomodacoes {
+  margin-top: 120px;
+  margin-bottom: 10px;
+}
+
+h2{
+  margin-bottom: 40px;
+}
+
+.cabecalho{
+  display: flex;
+  background-color:white; 
+  height: 80px;
+}
+
+.logo{
+  margin: auto 10%;
+}
+
+.logo img{
+  height: 40px;
+}
+
+.fakebar{
+  margin: auto;
+  margin-right: 10%;
+}
+
+.fakebar img{
+  height: 3.5vw;
+  max-height: 60px;
+}
+
+.menu {
+  margin: auto;
+}
+
+.card{
+  min-width: 250px;
+  max-width: 350px;
+  border:none;
+}
+
+
+.card img{
+  transition: all .3s linear;
+}
+
+.card img:hover{
+  transform: scale(1.1);
+}
+
+.card_tipo{
+  font-size: 14;
+  font-family: inherit;
+  color: grey;
+  margin: 0;
+}
+
+.card_titulo{
+  margin: 0;
+}
+
+.conteudo{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Rodapé */
+.footer {
+  margin-top: 25px;
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
